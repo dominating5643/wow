@@ -1,0 +1,51 @@
+{
+  "name": "zlatmax",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "db_import": "node ./backend/database/import_to_database.js",
+    "kit": "node kit.config.js",
+    "kit_watch": "node kit_watch.config.js",
+    "server": "node server.config.js",
+    "dev": "node kit.config.js && webpack  --progress",
+    "backend": "nodemon backend/index.js",
+    "build": "node kit.config.js && webpack --node-env=production --progress && node clean_dist.config.js",
+    "clean_dist": "node clean_dist.config.js",
+    "clear": "rd /s /q dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.19.1",
+    "babel-loader": "^8.2.5",
+    "child_process": "^1.0.2",
+    "cross-spawn": "^7.0.3",
+    "css-loader": "^6.7.1",
+    "css-minimizer-webpack-plugin": "^4.1.0",
+    "html-loader": "^4.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.1",
+    "node-kit": "^0.11.0",
+    "nodemon": "^2.0.20",
+    "postcss": "^8.4.16",
+    "postcss-loader": "^7.0.1",
+    "postcss-preset-env": "^7.8.2",
+    "sass": "^1.55.0",
+    "sass-loader": "^13.0.2",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "nodemailer": "^6.9.0",
+    "path": "^0.12.7",
+    "pg": "^8.8.0"
+  }
+}

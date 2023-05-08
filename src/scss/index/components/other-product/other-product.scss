@@ -1,0 +1,84 @@
+.other-product {
+    margin-bottom: calc_percent(30, 1600);
+
+    & .content {
+        @extend %flex_hc;
+    }
+
+    &__card {
+        flex: 1 1 auto;
+        padding: calc_rem(40) calc_rem(25);
+        color: white;
+        text-shadow: 0 0 calc_rem(6) rgba($color: rgb(0, 0, 0), $alpha: 1);
+        background: 0 20%/auto 100% url('../img/components/services/wow_bw.jpg') no-repeat;
+        @extend %shadow;
+        border-radius: calc_rem(5);
+        max-width: calc_rem(500);
+    }
+    &__title {
+        margin-bottom: calc_rem(40);
+        font-size: calc_rem(40);
+        text-align: center;
+    }
+    &__form {}
+    &__textarea-label {}
+    &__label {
+        display: block;
+        margin-bottom: calc_rem(7);
+        font-size: calc_rem(24);
+        color: $color_4;
+    }
+    &__textarea {
+        padding: calc_rem(10);
+        margin-bottom: calc_rem(30);
+        font-size: calc_rem(18);
+        color: white;
+        background-color: $color_3;
+        border: 2px solid $color_2;
+        width: calc_rem(300);
+        height: calc_rem(130);
+        border-radius: calc_rem(3);
+        resize: none;
+
+        &::-webkit-scrollbar {
+            width: calc_rem(9);
+            background-color: rgba(black, 0);
+        }
+        &::-webkit-scrollbar-track {
+            display: none;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: $color_2;
+            border-radius: calc_rem(40);
+            border: 3px solid $color_3;
+        }
+    }
+    &__input-label {}
+    &__inpit {
+        display: block;
+        padding: calc_rem(5);
+        margin-bottom: calc_rem(70);
+        font-size: calc_rem(18);
+        color: white;
+        background-color: $color_3;
+        border: 2px solid $color_2;
+        width: calc_rem(250);
+        height: calc_rem(40);
+        border-radius: calc_rem(3);
+    }
+    &__submit {
+        padding: calc_rem(12) calc_rem(20);
+        display: block;
+        font-size: calc_rem(20);
+        background-color: $color_2;
+        border-radius: calc_rem(3);
+
+        &:hover {
+            background-color: $color_2_hover;
+        }
+
+        &:active {
+            background-color: $color_2_active;
+        }
+    }
+}

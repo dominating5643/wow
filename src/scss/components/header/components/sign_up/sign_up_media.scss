@@ -1,0 +1,65 @@
+@media (max-width: 38em) {
+    .header {
+        &__sign-up-popup {}
+    }
+    .sign-up {
+        &_bgr {
+        }
+        &__container {
+            overflow: scroll;
+            width: calc_rem(320);
+            height: calc_rem(546);
+
+            &::-webkit-scrollbar {
+                width: 0;
+              }
+        }
+        &__close {
+        }
+        &__close-line {
+        }
+        &__close-line-1 {
+        }
+            &__close-line-2 {
+            }
+        &__title {
+            font-size: calc_rem(28);
+        }
+        &__form-container {
+        }
+        &__form {}
+        &__email-container {
+        }
+        &__email-label {}
+        &__input-container {
+        }
+        &__label {
+        }
+        &__email {}
+        &__input {
+        }
+        &__nickname-and-tlg-container {
+        }
+        &__flex-container {
+            flex-direction: column;
+            gap: calc_rem(15);
+        }
+        &__nickname-container {}
+        &__nickname-label {}
+        &__nickname {}
+        &__tlg-container {}
+        &__tlg-label {}
+        &__tlg {}
+        &__passwords-container {
+        }
+        &__password-container {}
+        &__password-label {}
+        &__password {}
+        &__repeat-password-container {}
+        &__repeat-password-label {}
+        &__repeat-password {}
+        &__message {}
+        &__submit {
+        }
+    }    
+}

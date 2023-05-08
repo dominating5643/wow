@@ -1,0 +1,54 @@
+<section class="header__log-in-popup log-in">
+    <div class="log-in_bgr"></div>
+    <div class="log-in__container">
+        <button type="button" class="log-in__back">
+            <span class="log-in__back-line log-in__back-line-1"></span>
+            <span class="log-in__back-line log-in__back-line-2"></span>
+            <span class="log-in__back-line log-in__back-line-3"></span>
+        </button>
+        <button type="button" class="log-in__close">
+            <span class="log-in__close-line log-in__close-line-1"></span>
+            <span class="log-in__close-line log-in__close-line-2"></span>
+        </button>
+        <article class="log-in__main-container">
+            <h2 class="log-in__title log-in__main-title"><span class="en">Log in</span><span class="ru">Вход</span></h2>
+            <form action="#" class="log-in__form">
+                <label class="log-in__email-label log-in__label" for="logInEmail"><span class="en">Email</span><span class="ru">Эл. почта</span></label>
+                <input type="email" value="" name="logInEmail" class="log-in__email log-in__input" placeholder="" tabindex="9">
+                <label class="log-in__password-label log-in__label" for="logInPassword"><span class="en">Password</span><span class="ru">Пароль</span></label>
+                <input type="password" value="" name="logInPassword" class="log-in__password log-in__input" placeholder="" tabindex="10">
+                <button type="button" class="log-in__restore-password"><span class="en">Restore password</span><span class="ru">Восстановить пароль</span></button>
+                <p class="log-in__error-message"></p>
+                <button class="log-in__submit"><span class="en">Log in</span><span class="ru">Войти</span></button>
+            </form>
+        </article>
+        <article class="log-in__confirmation-container">
+            <h2 class="log-in__title log-in__confirmation-title"><span class="en">Confirmation</span><span class="ru">Подтверждение</span></h2>
+            <form action="#" class="log-in__confirmation-form">
+                <label class="log-in__confirmation-email-label log-in__label" for="logInConfirmationEmail"><span class="en">Email</span><span class="ru">Эл. почта</span></label>
+                <input type="email" value="" name="logInConfirmationEmail" class="log-in__confirmation-email log-in__input" placeholder="">
+                <div class="log-in__confirmation-submit-container">
+                    <button class="log-in__confirmation-submit"><span class="en">Get code</span><span class="ru">Получить код</span></button>
+                    <p class="log-in__confirmation-counter"></p>
+                </div>
+            </form>
+            <p class="log-in__confirmation-error"></p>
+            <form action="#" class="log-in__code-form">
+                <label class="log-in__code-label log-in__label" for="logInCode"><span class="en">Code</span><span class="ru">Код</span></label>
+                <input type="text" value="" name="logInCode" class="log-in__code log-in__input" placeholder="">
+                <button class="log-in__code-submit _disabled"><span class="en">Send</span><span class="ru">Отправить</span></button>
+            </form>
+        </article>
+        <article class="log-in__new-pass-container">
+            <h2 class="log-in__title log-in__new-pass-title"><span class="en">New password</span><span class="ru">Новый пароль</span></h2>
+            <form action="#" class="log-in__new-pass-form">
+                <label class="log-in__new-pass-label log-in__label" for="logInNewPass"><span class="en">Password</span><span class="ru">Пароль</span></label>
+                <input type="password" value="" name="logInNewPass" class="log-in__new-pass log-in__input" placeholder="">
+                <label class="log-in__repeat-new-pass-label log-in__label" for="logInRepeatNewPass"><span class="en">Repeat password</span><span class="ru">Повторите пароль</span></label>
+                <input type="password" value="" name="logInRepeatNewPass" class="log-in__repeat-new-pass log-in__input" placeholder="">
+                <p class="log-in__new-pass-error"></p>
+                <button class="log-in__new-pass-submit"><span class="en">Send</span><span class="ru">Отправить</span></button>
+            </form>
+        </article>
+    </div>
+</section>

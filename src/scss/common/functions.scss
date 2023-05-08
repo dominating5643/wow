@@ -1,0 +1,22 @@
+@use "sass:math";
+
+// Функция подсчета значения в rem из значения в px.
+@function calc_rem($value) {
+    $value: math.div($value, 16) * 1rem;
+
+    @return $value; 
+}
+
+// Функция подсчета значения в em из значения в px текущего блока и родительского блока.
+@function calc_em($value1, $value2) {
+    $value: math.div($value1, $value2) * 1em;
+
+    @return $value; 
+}
+
+// Функция подсчета значения в % из значения в px текущего блока и родительского блока.
+@function calc_percent($value1, $value2) {
+    $value: math.div($value1, $value2) * 100%;
+
+    @return $value;
+}

@@ -1,0 +1,101 @@
+.product {
+    padding-top: calc_percent(30, 1600);
+    margin-bottom: calc_percent(30, 1600);
+    color: white;
+
+    & .content {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: calc_rem(20);
+    }
+}
+.product-card {
+    flex: 0 0 auto;
+    padding: calc_rem(25) calc_rem(20) calc_rem(40);
+    border-radius: calc_rem(5);
+    background: 0 20%/auto 100% url('../img/components/services/product.jpg') no-repeat;
+    @extend %shadow;
+    width: calc_rem(280);
+    min-height: calc_rem(335);
+
+    &.product-card__sale {
+        .product-card__price-value-sale {
+            margin-right: calc_rem(5);
+            display: flex;
+        }
+        .product-card__price-value {
+            color: $color_4;
+            font-size: calc_rem(18);
+            text-decoration: line-through;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+    &__top-container {}
+    &__title {
+        margin-bottom: calc_rem(10);
+        font-size: calc_rem(28);
+    }
+    &__discription-container {
+        margin-bottom: calc_rem(30);
+        text-align: justify;
+        font-size: calc_rem(14);
+        color: $color_4;
+    }
+    &__functions-container {
+    }
+    &__lower-container {}
+    &__price-container {
+        margin-bottom: calc_rem(12);
+    }
+    &__price-label {
+        padding-bottom: calc_rem(3);
+        display: block;
+        font-size: calc_rem(14);
+        color: $color_4;
+    }
+    &__functions-label {}
+    &__price-output {
+    }
+    &__functions-output {}
+    &__price-from {
+        margin-right: calc_rem(5);
+    }
+    &__price-value-container {
+        display: flex;
+        font-size: calc_rem(22);
+        align-items: flex-end;
+    }
+    &__price-value-sale {
+        display: none;
+    }
+    &__price-value {
+        display: flex;
+    }
+    &__price-currency {}
+    &__link {
+        padding: calc_rem(4) calc_rem(11);
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        min-width: calc_rem(85);
+        min-height: calc_rem(35);
+        font-size: calc_rem(20);
+        background-color: $color_2;
+        border-radius: calc_rem(3);
+
+        &:hover {
+            background-color: $color_2_hover;
+        }
+
+        &:active {
+            background-color: $color_2_active;
+        }
+    }
+}

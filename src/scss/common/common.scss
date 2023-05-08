@@ -1,0 +1,71 @@
+body {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    overflow-x: hidden;
+
+    &._lock {
+        overflow: hidden;
+    }
+}
+
+.content {
+    padding: 0 calc_rem(15);
+    margin: 0 auto;
+    max-width: calc_rem(1200);
+
+    @media (max-width: 32em) {
+        padding: 0 calc_rem(10);
+    }
+}
+
+main {
+    padding-bottom: calc_percent(40, 1600);
+    background: 0 0 / 100% auto url('../img/components/index/main_bgr.jpg');
+}
+
+.flex-vc {
+    @extend %flex_vc;
+}
+
+// ._hidden {
+//     opacity: 0;
+//     visibility: hidden;
+// }
+
+// ._shown {
+//     opacity: 1;
+//     visibility: visible;
+// }
+
+// ._active {
+// }
+
+._scroll-lock {
+    overflow-y: hidden;
+}
+
+._hide-star {
+    display: none;
+}
+
+.ru._show {
+    display: block;
+}
+.ru._hide {
+    display: none;
+}
+.en._show {
+    display: block;
+}
+.en._hide {
+    display: none;
+}
+.hide {
+    display: none;
+}
+
+.on-duty {
+    width: calc_rem(1);
+    height: calc_rem(1);
+    opacity: 0;
+}

@@ -1,0 +1,17 @@
+@mixin hide_block($ms) {
+    opacity: 0;
+    visibility: hidden;
+    transition-duration: $ms * 1ms;
+}
+
+@mixin show_block($ms) {
+    opacity: 1;
+    visibility: visible;
+    transition-duration: $ms * 1ms;
+}
+
+@mixin content($padding, $content) {
+    margin: 0 auto;
+    padding: 0 calc_percent($padding, $content);
+    max-width: calc_rem($content);
+}

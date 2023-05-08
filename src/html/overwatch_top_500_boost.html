@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">        <title></title>
+    </head>
+    <body>
+        <header class="header">
+    <div class="content">
+        <div class="left-row">
+            <div class="left-row__logo">
+                <a href="./index.html">
+                    <img src="../img/icons/header/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="left-row__state">
+                <button type="button" src="#" class="left-row__state-btn left-row__contacts-btn"><span class="en">Contacts</span><span class="ru">Контакты</span></button>
+                <a type="button" href="./admin.html" class="left-row__state-btn header__admin"><span class="en">Admin</span><span class="ru">Админ</span></a>
+                <ul class="left-row__state-list">
+                    <li class="left-row__state-item left-row__state-email">pochta_pochta@gmail.com</li>
+                    <li class="left-row__state-item left-row__state-tlg"><a href="https://t.me/mxvlvkn">@mxvlvkn</a></li>
+                </ul>
+            </div>
+            <a href="https://t.me/+t5QGNygvXzYxZWFi" class="left-row__tlg">
+                <div class="left-row__tlg-img"><img src="../img/icons/header/tlg.svg" alt=""></div>
+                <p class="left-row__tlg-title"><span class="en">Telegram Chat</span><span class="ru">Telegram Чат</span></p>
+            </a>
+            <a href="https://t.me/+t5QGNygvXzYxZWFi" class="left-row__chat">
+                <div class="left-row__chat-img"><img src="../img/icons/header/chat.svg" alt=""></div>
+                <p class="left-row__chat-title"><span class="en">Our Chat</span><span class="ru">Наш чат</span></p>
+            </a>
+        </div>
+        <div class="right-row">
+            <div class="header__languages languages">
+                <div class="languages__en languages__flag languages__selected">
+                    <img src="../img/components/header/en.png" alt="">
+                </div>
+                <div class="languages__ru languages__flag languages__not-selected">
+                    <img src="../img/components/header/ru.png" alt="">
+                </div>
+            </div>
+            <button class="right-row__reg"><span class="en">Sign up</span><span class="ru">Регистрация</span></button>
+            <button class="right-row__log"><span class="en">Log in</span><span class="ru">Вход</span></button>
+            <button class="right-row__exit"><span class="en">Exit</span><span class="ru">Выйти</span></button>
+            <a href="./account.html" class="right-row__account"><span class="en">Account</span><span class="ru">Аккаунт</span></a>
+            <div class="header__burger burger">
+                <button type="button" class="burger__button">
+                    <span class="burger__line burger__line-1"></span>
+                    <span class="burger__line burger__line-2"></span>
+                    <span class="burger__line burger__line-3"></span>
+                </button>
+                <div class="burger__list"></div>
+            </div>
+        </div>
+    </div>
+    <section class="header__sign-up-popup sign-up">
+    <div class="sign-up_bgr"></div>
+    <div class="sign-up__container">
+        <button type="button" class="sign-up__close">
+            <span class="sign-up__close-line sign-up__close-line-1"></span>
+            <span class="sign-up__close-line sign-up__close-line-2"></span>
+        </button>
+        <button type="button" class="sign-up__back">
+            <span class="sign-up__back-line sign-up__back-line-1"></span>
+            <span class="sign-up__back-line sign-up__back-line-2"></span>
+            <span class="sign-up__back-line sign-up__back-line-3"></span>
+        </button>
+        <article class="sign-up__form-container sign-up__registration">
+            <h2 class="sign-up__title"><span class="en">Sign up</span><span class="ru">Регистрация</span></h2>
+            <form action="#" class="sign-up__form sign-up__form-registration">
+                    <div class="sign-up__email-container sign-up__input-container">
+                    <label class="sign-up__email-label sign-up__label" for="singUpEmail"><span class="en">Email</span><span class="ru">Эл. Почта</span></label>
+                    <input type="email" value="" name="singUpEmail" class="sign-up__email sign-up__input" tabindex="1">
+                </div>
+                <div class="sign-up__nickname-and-tlg-container sign-up__flex-container">
+                    <div class="sign-up__nickname-container sign-up__input-container">
+                        <label class="sign-up__nickname-label sign-up__label" for="singUpNickname"><span class="en">Nickname</span><span class="ru">Никнейм</span></label>
+                        <input type="text" value="" name="singUpNickname" class="sign-up__nickname sign-up__input" tabindex="2">
+                    </div>
+                    <div class="sign-up__tlg-container sign-up__input-container">
+                        <label class="sign-up__tlg-label sign-up__label" for="singUpTlg"><span class="en">Telegram</span><span class="ru">Телеграм</span></label>
+                        <input type="text" value="" name="singUpTlg" class="sign-up__tlg sign-up__input" placeholder="@telegram" tabindex="3">
+                    </div>
+                </div>
+                <div class="sign-up__passwords-container sign-up__flex-container">
+                    <div class="sign-up__password-container sign-up__input-container">
+                        <label class="sign-up__password-label sign-up__label" for="singUpPassword"><span class="en">Password</span><span class="ru">Пароль</span></label>
+                        <input type="password" value="" name="singUpPassword" class="sign-up__password sign-up__input"  tabindex="4">
+                    </div>
+                    <div class="sign-up__repeat-password-container sign-up__input-container">
+                        <label class="sign-up__repeat-password-label sign-up__label" for="singUpRepeatPassword"><span class="en">Repeat password</span><span class="ru">Повторите пароль</span></label>
+                        <input type="password" value="" name="singUpRepeatPassword" class="sign-up__repeat-password sign-up__input" tabindex="5">
+                    </div>
+                </div>
+                <p class="sign-up__error-message sign-up__reg-error-message"></p>
+                <button type="submit" class="sign-up__submit sign-up__submit-registration"  tabindex="6"><span class="en">Send</span><span class="ru">Отправить</span></button>
+            </form>
+        </article>
+        <article class="sign-up__form-container sign-up__activation">
+            <h2 class="sign-up__title"><span class="en">Confirmation</span><span class="ru">Подтверждение</span></h2>
+            <p class="sign-up__subtitle"></p>
+            <form action="#" class="sign-up__form sign-up__form-activation">
+                <label class="sign-up__code-label sign-up__label" for="singUpCode"><span class="en">Code</span><span class="ru">Код</span></label>
+                <input type="text" value="" name="singUpCode" class="sign-up__code sign-up__input" placeholder="" tabindex="7">
+                <div class="sign-up__reorder-container">
+                    <button type="button" class="sign-up__reorder"><span class="en">Send code again</span><span class="ru">Отправить код повторно</span></button>
+                    <p class="sign-up__reorder-counter">2:00</p>
+                </div>
+                <p class="sign-up__error-message sign-up__code-error-message"></p>
+                <button type="submit" class="sign-up__submit sign-up__submit-activation"  tabindex="8"><span class="en">Send</span><span class="ru">Отправить</span></button>
+            </form>
+        </article>
+    </div>
+</section>
+    <section class="header__log-in-popup log-in">
+    <div class="log-in_bgr"></div>
+    <div class="log-in__container">
+        <button type="button" class="log-in__back">
+            <span class="log-in__back-line log-in__back-line-1"></span>
+            <span class="log-in__back-line log-in__back-line-2"></span>
+            <span class="log-in__back-line log-in__back-line-3"></span>
+        </button>
+        <button type="button" class="log-in__close">
+            <span class="log-in__close-line log-in__close-line-1"></span>
+            <span class="log-in__close-line log-in__close-line-2"></span>
+        </button>
+        <article class="log-in__main-container">
+            <h2 class="log-in__title log-in__main-title"><span class="en">Log in</span><span class="ru">Вход</span></h2>
+            <form action="#" class="log-in__form">
+                <label class="log-in__email-label log-in__label" for="logInEmail"><span class="en">Email</span><span class="ru">Эл. почта</span></label>
+                <input type="email" value="" name="logInEmail" class="log-in__email log-in__input" placeholder="" tabindex="9">
+                <label class="log-in__password-label log-in__label" for="logInPassword"><span class="en">Password</span><span class="ru">Пароль</span></label>
+                <input type="password" value="" name="logInPassword" class="log-in__password log-in__input" placeholder="" tabindex="10">
+                <button type="button" class="log-in__restore-password"><span class="en">Restore password</span><span class="ru">Восстановить пароль</span></button>
+                <p class="log-in__error-message"></p>
+                <button class="log-in__submit"><span class="en">Log in</span><span class="ru">Войти</span></button>
+            </form>
+        </article>
+        <article class="log-in__confirmation-container">
+            <h2 class="log-in__title log-in__confirmation-title"><span class="en">Confirmation</span><span class="ru">Подтверждение</span></h2>
+            <form action="#" class="log-in__confirmation-form">
+                <label class="log-in__confirmation-email-label log-in__label" for="logInConfirmationEmail"><span class="en">Email</span><span class="ru">Эл. почта</span></label>
+                <input type="email" value="" name="logInConfirmationEmail" class="log-in__confirmation-email log-in__input" placeholder="">
+                <div class="log-in__confirmation-submit-container">
+                    <button class="log-in__confirmation-submit"><span class="en">Get code</span><span class="ru">Получить код</span></button>
+                    <p class="log-in__confirmation-counter"></p>
+                </div>
+            </form>
+            <p class="log-in__confirmation-error"></p>
+            <form action="#" class="log-in__code-form">
+                <label class="log-in__code-label log-in__label" for="logInCode"><span class="en">Code</span><span class="ru">Код</span></label>
+                <input type="text" value="" name="logInCode" class="log-in__code log-in__input" placeholder="">
+                <button class="log-in__code-submit _disabled"><span class="en">Send</span><span class="ru">Отправить</span></button>
+            </form>
+        </article>
+        <article class="log-in__new-pass-container">
+            <h2 class="log-in__title log-in__new-pass-title"><span class="en">New password</span><span class="ru">Новый пароль</span></h2>
+            <form action="#" class="log-in__new-pass-form">
+                <label class="log-in__new-pass-label log-in__label" for="logInNewPass"><span class="en">Password</span><span class="ru">Пароль</span></label>
+                <input type="password" value="" name="logInNewPass" class="log-in__new-pass log-in__input" placeholder="">
+                <label class="log-in__repeat-new-pass-label log-in__label" for="logInRepeatNewPass"><span class="en">Repeat password</span><span class="ru">Повторите пароль</span></label>
+                <input type="password" value="" name="logInRepeatNewPass" class="log-in__repeat-new-pass log-in__input" placeholder="">
+                <p class="log-in__new-pass-error"></p>
+                <button class="log-in__new-pass-submit"><span class="en">Send</span><span class="ru">Отправить</span></button>
+            </form>
+        </article>
+    </div>
+</section>
+</header>
+        <main>
+            <div class="hide data-title">overwatch_top_500_boost</div>
+            <div class="content">
+                <section class="produst-page">
+                    <section class="produst-page__description">
+                        
+                        <span class="produst-page__dedicated"></span>
+                        <span class="produst-page__red"></span>
+                        <span class="produst-page__bold"></span>
+                        <h1 class="produst-page__title"><span class="en">OVERWATCH TOP 500 BOOST</span><span class="ru">OVERWATCH ТОП 500 БУСТ</span></h1>
+                        <p class="produst-page__paragraph"><span class="en">Buy the Top 500 Rank Boost here, and get this premium service with a guaranteed top Overwatch Rank! It's a desirable peak for any player in Overwatch, and this offer will help you climb it. Buy Overwatch 2 Top 500 and play with the best players in your region.</span><span class="ru">Купите повышение ранга Top 500 здесь и получите эту премиальную услугу с гарантированным высшим рангом Overwatch! Это желанная вершина для любого игрока в Overwatch, и это предложение поможет вам подняться на нее. Купите Overwatch 2 Top 500 и играйте с лучшими игроками вашего региона.</span></p>
+                        <p class="produst-page__paragraph"><span class="en">GrandMaster is unbelievably hard to acquire because you need to play versus highly trained players and a lot of time to get the desired K/D ratio and <span class="produst-page__dedicated">stay among the top 500 players</span> in Overwatch boost to top 500.</span><span class="ru">Получить GrandMaster невероятно сложно, потому что вам нужно играть против высококвалифицированных игроков и много времени, чтобы получить желаемое соотношение K/D и <span class="produst-page__dedicated">оставаться среди 500 лучших игроков</span> в Повышение Overwatch до топ-500.</span></p>
+                        <p class="produst-page__paragraph"><span class="en"><span class="produst-page__red">Gift Inside</span> — Includes Stream;</span><span class="ru"><span class="produst-page__red">Подарок внутри</span> — включает трансляцию;</span></p>
+                        <h2 class="produst-page__subtitle"><span class="en">EXECUTION OPTIONS</span><span class="ru">ВАРИАНТЫ ИСПОЛНЕНИЯ</span></h2>
+                        <ul class="produst-page__list">
+                            <li class="produst-page__item"><span class="en"><span class="produst-page__bold">Normal</span> — we will start boost to the TOP 500 Overwatch in 3-6 hours;</span><span class="ru"><span class="produst-page__bold">Обычный</span> — начнем прокачку в ТОП 500 Overwatch через 3-6 часов;</span></li>
+                            <li class="produst-page__item"><span class="en"><span class="produst-page__bold">Express</span> — Overwatch top 500 boosting completion with a high priority with a start in a 1-2 hours</span><span class="ru"><span class="produst-page__bold">Экспресс</span> — Overwatch top 500 ускорение завершения с высоким приоритетом со стартом через 1-2 часа</span></li>
+                            <li class="produst-page__item"><span class="en"><span class="produst-page__bold">Super Express</span> — for this order, we will take the Top 500 of your region boosters for Overwatch MMR carry and finish this offer 40% faster, buy Top 500 overwatch with super express and you will <span class="produst-page__dedicated">get a free live stream.</span></span><span class="ru"><span class="produst-page__bold">Супер экспресс</span> — по этому заказу мы возьмем 500 лучших бустеров вашего региона для переноса Overwatch MMR и закончим это предложение на 40% быстрее, купите Overwatch 500 лучших с супер экспрессом и вы получите <span class="produst-page__dedicated">бесплатную прямую трансляцию.</span></span></li>
+                        </ul> 
+                    </section>
+                    <form class="product-settings product-settings__form">
+                        <div class="product-settings__container">
+                            <div class="product-settings__set">
+                                <h2 class="product-settings__hidden-header"><span class="en">OVERWATCH TOP 500 BOOST</span><span class="ru">OVERWATCH ТОП 500 БУСТ</span></h2>
+                                <div class="product-settings__option radio">
+                                    <h2 class="product-settings__header"><span class="en">CHOOSE PLATFORM</span><span class="ru">ВЫБЕРИТЕ ПЛАТФОРМУ</span></h2>
+                                    <div class="product-settings__radiobuttons">
+                                        <p value="pc" name="platform" data-status="on" class="product-settings__radiobutton _checked"><span class="en">PC</span><span class="ru">PC</span></p>
+                                        <input type="radio" value="pc" name="platform" class="product-settings__radiobutton-input"></input>
+                                        <p value="xbox" name="platform" data-status="off" class="product-settings__radiobutton"><span class="en">XBOX</span><span class="ru">XBOX</span></p>
+                                        <input type="radio" value="xbox" name="platform" class="product-settings__radiobutton-input"></input>
+                                        <p value="ps" name="platform" data-status="off" class="product-settings__radiobutton"><span class="en">PS</span><span class="ru">PS</span></p>
+                                        <input type="radio" value="ps" name="platform" class="product-settings__radiobutton-input"></input>
+                                        <p value="switch" name="platform" data-status="off" class="product-settings__radiobutton"><span class="en">SWITCH</span><span class="ru">SWITCH</span></p>
+                                        <input type="radio" value="switch" name="platform" class="product-settings__radiobutton-input"></input>
+                                    </div>
+                                </div>
+                                <div class="product-settings__option radio">
+                                    <h2 class="product-settings__header"><span class="en">CHOOSE REGION</span><span class="ru">ВЫБЕРИТЕ РЕГИОН</span></h2>
+                                    <div class="product-settings__radiobuttons">
+                                        <p value="europe" name="region" data-status="on" class="product-settings__radiobutton _checked"><span class="en">Europe</span><span class="ru">Европа</span></p>
+                                        <input type="radio" value="europe" name="region" class="product-settings__radiobutton-input"></input>
+                                        <p value="americas" name="region" data-status="off" class="product-settings__radiobutton"><span class="en">Americas</span><span class="ru">Америка</span></p>
+                                        <input type="radio" value="americas" name="region" class="product-settings__radiobutton-input"></input>
+                                        <p value="asia" name="region" data-status="off" class="product-settings__radiobutton"><span class="en">Asia</span><span class="ru">Азиа</span></p>
+                                        <input type="radio" value="asia" name="region" class="product-settings__radiobutton-input"></input>
+                                    </div>
+                                </div>
+                                <div class="product-settings__option radio">
+                                    <div class="product-settings__option radio">
+                                        <h2 class="product-settings__header"><span class="en">EXECUTION OPTIONS</span><span class="ru">ВАРИАНТЫ ИСПОЛНЕНИЯ</span></h2>
+                                        <div class="product-settings__radiobuttons">
+                                            <p value="normal" name="execution_options" data-status="on" class="product-settings__radiobutton _checked"><span class="en">Normal</span><span class="ru">Нормальный</span></p>
+                                            <input type="radio" value="normal" name="execution_options" class="product-settings__radiobutton-input"></input>
+                                            <p value="express" name="execution_options" data-status="off" class="product-settings__radiobutton"><span class="en">Express</span><span class="ru">Экспресс</span></p>
+                                            <input type="radio" value="express" name="execution_options" class="product-settings__radiobutton-input"></input>
+                                            <p value="super_express" name="execution_options" data-status="off" class="product-settings__radiobutton"><span class="en">super express</span><span class="ru">Супер экспресс</span></p>
+                                            <input type="radio" value="super_express" name="execution_options" class="product-settings__radiobutton-input"></input>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-settings__option select">
+                                    <h2 class="product-settings__header"><span class="en">CHOOSE CURRENT RANK</span><span class="ru">ВЫБЕРИТЕ ТЕКУЩЕЕ ЗВАНИЕ</span></h2>
+                                    <div class="product-settings__select-container">
+                                        <select name="rank" class="product-settings__select">
+                                            <option value="bronze" selected class="product-settings__select-option">Bronze</option>
+                                            <option value="silver" class="product-settings__select-option">Silver</option>
+                                            <option value="gold" class="product-settings__select-option">Gold</option>
+                                            <option value="platinum" class="product-settings__select-option">Platinum</option>
+                                            <option value="diamond" class="product-settings__select-option">Diamond</option>
+                                            <option value="master" class="product-settings__select-option">Master</option>
+                                            <option value="grandmaster" class="product-settings__select-option">Grandmaster</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-price product-price__container">
+                                <p class="product-price__price"><span class="en"><span class="product-price__text"></span><span>$</span></span><span class="ru"><span class="product-price__text"></span><span>руб.</span></span></p>
+                                <div class="product-price__button-container">
+                                    <button class="product-price__submit"><span class="en">buy</span><span class="ru">Оплатить</span></button>
+                                    <a href="https://t.me/mxvlvkn" class="product-price__call"><span class="en"><span><span class="product-price__call-icon"></span><span class="product-price__call-text">Write</span></span></span><span class="ru"><span><span class="product-price__call-icon"></span><span class="product-price__call-text">Написать</span></span></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="product-price product-price__hidden">
+                        <div class="product-price product-price__container">
+                            <p class="product-price__price"><span class="en"><span class="product-price__text"></span><span>$</span></span><span class="ru"><span class="product-price__text"></span><span>руб.</span></span></p>
+                            <div class="product-price__button-container">
+                                <button class="product-price__submit"><span class="en">buy</span><span class="ru">Оплатить</span></button>
+                                <a href="https://t.me/mxvlvkn" class="product-price__call"><span class="en"><span><span class="product-price__call-icon"></span><span class="product-price__call-text">Write</span></span></span><span class="ru"><span><span class="product-price__call-icon"></span><span class="product-price__call-text">Написать</span></span></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <sectoin class="advantages">
+    <h2 class="advantages__title  section-title"><span class="en">Our advantages</span><span class="ru">Наши преимущества</span></h2>
+    <div class="advantages__advantage-container">
+        <div class="advantages__advantage advantage">
+            <div class="advantage__img">
+                <img src="../img/components/index/advantages/icon.svg" alt="">
+            </div>
+            <h3 class="advantage__title"><span class="en">Experience</span><span class="ru">Опыт</span></h3>
+            <p class="advantage__description"><span class="en">Experienced players with over 4000 hours of game time</span><span class="ru">Опытные игроки с проведенным временем в игре более 4000 часов</span></p>
+        </div>
+        <div class="advantages__advantage advantage">
+            <div class="advantage__img">
+                <img src="../img/components/index/advantages/icon.svg" alt="">
+            </div>
+            <h3 class="advantage__title"><span class="en">Time</span><span class="ru">Время</span></h3>
+            <p class="advantage__description"><span class="en">Performing services in the shortest time</span><span class="ru">Выполнение услуг за минимальное время</span></p>
+        </div>
+        <div class="advantages__advantage advantage">
+            <div class="advantage__img">
+                <img src="../img/components/index/advantages/icon.svg" alt="">
+            </div>
+            <h3 class="advantage__title"><span class="en">Security</span><span class="ru">Безопастность</span></h3>
+            <p class="advantage__description"><span class="en">All actions are performed only by methods allowed in the game</span><span class="ru">Все действия выполняются только дозволенными в игре методами</span></p>
+        </div>
+    </div>
+</sectoin>
+                <section class="best-products">
+    <h2 class="best-products__title section-title"><span class="en">Best Services</span><span class="ru">Лучшие услуги</span></h2>
+    <div class="best-products__products-container">
+        <article class="best-products__product-card product-card product-card__sale">
+            <form action="#" class="product-card__form">
+                <div class="product-card__top-container">
+                    <h2 class="product-card__title"><span class="en">Wow dragonflight level boost</span><span class="ru">Wow dragonflight прокачка уровня</span></h2>
+                    <p class="product-card__discription-container product-card__functions-container"><span class="en">Buy a dragon flight upgrade to get the character of the desired level quickly.</span><span class="ru">Купите прокачку драконьей стаи, чтобы получить персонаж желаемого уровня быстро.</span></p>
+                </div>
+                <div class="product-card__lower-container">
+                    <div class="product-card__price-container product-card__functions-container">
+                        <label for="" class="product-card__price-label product-card__functions-label"><span class="en">Price:</span><span class="ru">Цена:</span></label>
+                        <output class="product-card__price-output product-card__functions-output">
+                            <span class="product-card__price-value-container">
+                                <span class="product-card__price-from"><span class="en">From </span><span class="ru">От </span></span>
+                                <span class="product-card__price-value-sale"><span class="en">7.92</span><span class="ru">554</span><span class="product-card__price-currency"><span class="en">$</span><span class="ru">руб.</span></span></span>
+                                <span class="product-card__price-value"><span class="en">9.32</span><span class="ru">652</span><span class="product-card__price-currency"><span class="en">$</span><span class="ru">руб.</span></span></span>
+                            </span>
+                        </output>
+                    </div>
+                    <a href="./wow_dragonflight_level_boost.html" type="button" class="product-card__link"><span class="en">More</span><span class="ru">Подробнее</span></a>
+                </div>
+            </form>
+        </article>
+        <article class="best-products__product-card product-card">
+            <form action="#" class="product-card__form">
+                <div class="product-card__top-container">
+                    <h2 class="product-card__title"><span class="en">Overwatch placement matches boost</span><span class="ru">Overwatch размещения усиление матчей</span></h2>
+                    <p class="product-card__discription-container product-card__functions-container"><span class="en">Buy the Overwatch Placement power-up from Overgear and let those matches end with seasoned PRO players. These matches will allow you to pass an effective calibration.</span><span class="ru">Купите усиление Overwatch Placement в Overgear и дайте возможность этим матчам завершиться опытными PRO-игроками. Эти матчи позволят вам пройти эффективную калибровку.</span></p>
+                </div>
+                <div class="product-card__lower-container">
+                    <div class="product-card__price-container product-card__functions-container">
+                        <label for="" class="product-card__price-label product-card__functions-label"><span class="en">Price:</span><span class="ru">Цена:</span></label>
+                        <output class="product-card__price-output product-card__functions-output">
+                            <span class="product-card__price-value-container">
+                                <span class="product-card__price-from"><span class="en">From </span><span class="ru">От </span></span>
+                                <span class="product-card__price-value-sale"><span class="en"></span><span class="ru"></span><span class="product-card__price-currency"><span class="en">$</span><span class="ru">руб.</span></span></span>
+                                <span class="product-card__price-value"><span class="en">27</span><span class="ru">1890</span><span class="product-card__price-currency"><span class="en">$</span><span class="ru">руб.</span></span></span>
+                            </span>
+                        </output>
+                    </div>
+                    <a href="./overwatch_placement_matches_boost.html" type="button" class="product-card__link"><span class="en">More</span><span class="ru">Подробнее</span></a>
+                </div>
+            </form>
+        </article>
+        <article class="best-products__product-card product-card">
+            <form action="#" class="product-card__form">
+                <div class="product-card__top-container">
+                    <h2 class="product-card__title"><span class="en">Poe custom build</span><span class="ru">Poe таможенная сборка</span></h2>
+                    <p class="product-card__discription-container product-card__functions-container"><span class="en">Buy any build you want! Give us the build you want to create or we will create one for you.</span><span class="ru">Купите любую желаемую сборку! Дайте нам сборку, которую хотите создать, или мы создадим ее для вас.</span></p>
+                </div>
+                <div class="product-card__lower-container">
+                    <div class="product-card__price-container product-card__functions-container">
+                        <label for="" class="product-card__price-label product-card__functions-label"><span class="en">Price:</span><span class="ru">Цена:</span></label>
+                        <output class="product-card__price-output product-card__functions-output">
+                            <span class="product-card__price-value-container">
+                                <span class="product-card__price-from"><span class="en">From </span><span class="ru">От </span></span>
+                                <span class="product-card__price-value-sale"><span class="en"></span><span class="ru"></span><span class="product-card__price-currency"><span class="en">$</span><span class="ru">руб.</span></span></span>
+                                <span class="product-card__price-value"><span class="en">160</span><span class="ru">11200</span><span class="product-card__price-currency"><span class="en">$</span><span class="ru">руб.</span></span></span>
+                            </span>
+                        </output>
+                    </div>
+                    <a href="./poe_custom_build.html" type="button" class="product-card__link"><span class="en">More</span><span class="ru">Подробнее</span></a>
+                </div>
+            </form>
+        </article>
+    </div>
+</section>
+                <section class="reviews">
+    <div class="reviews__container-title">
+    <h2 class="reviews__title"><span class="en">Reviews</span><span class="ru">Отзывы</span></h2>
+    </div>
+    <div class="reviews__content-container">
+        <article class="reviews__review review" id="1">
+            <p class="review__username"><span class="en">Review 1</span><span class="ru">Отзыв 1</span></p>
+            <div class="review__stars">
+                <div class="review__star">
+                    <img src="../img/components/index/review/fill_star.svg" class="" alt="">
+                    <img src="../img/components/index/review/filles_star.svg" class="_hide-star" alt="">
+                </div>
+                <div class="review__star">
+                    <img src="../img/components/index/review/fill_star.svg" class="" alt="">
+                    <img src="../img/components/index/review/filles_star.svg" class="_hide-star" alt="">
+                </div>
+                <div class="review__star">
+                    <img src="../img/components/index/review/fill_star.svg" class="" alt="">
+                    <img src="../img/components/index/review/filles_star.svg" class="_hide-star" alt="">
+                </div>
+                <div class="review__star">
+                    <img src="../img/components/index/review/fill_star.svg" class="" alt="">
+                    <img src="../img/components/index/review/filles_star.svg" class="_hide-star" alt="">
+                </div>
+                <div class="review__star">
+                    <img src="../img/components/index/review/fill_star.svg" class="" alt="">
+                    <img src="../img/components/index/review/filles_star.svg" class="_hide-star" alt="">
+                </div>
+            </div>
+            <h3 class="review__main-text"><span class="en">Quality service</span><span class="ru">Качественный сервис</span></h3>
+            <p class="review__text"><span class="en">Quality service, top notch. +rep</span><span class="ru">Качественный сервис, всё на высоте. +rep</span></p>
+        </article>
+        <article class="reviews__review review" id="2">
+            <p class="review__username"><span class="en">Review 2</span><span class="ru">Отзыв 2</span></p>
+            <div class="review__stars">
+                <div class="review__star">
+                    <img src="../img/components/index/review/fill_star.svg" class="" alt="">
+                    <img src="../img/components/index/review/filles_star.svg" class="_hide-star" alt="">
+                </div>
+                <div class="review__star">
+                    <img src="../img/components/index/review/fill_star.svg" class="" alt="">
+                    <img src="../img/components/index/review/filles_star.svg" class="_hide-star" alt="">
+                </div>
+                <div class="review__star">
+                    <img src="../img/components/index/review/fill_star.svg" class="" alt="">
+                    <img src="../img/components/index/review/filles_star.svg" class="_hide-star" alt="">
+                </div>
+                <div class="review__star">
+                    <img src="../img/components/index/review/fill_star.svg" class="" alt="">
+                    <img src="../img/components/index/review/filles_star.svg" class="_hide-star" alt="">
+                </div>
+                <div class="review__star">
+                    <img src="../img/components/index/review/fill_star.svg" class="" alt="">
+                    <img src="../img/components/index/review/filles_star.svg" class="_hide-star" alt="">
+                </div>
+            </div>
+            <h3 class="review__main-text"><span class="en">5 stars!</span><span class="ru">5 звёзд!</span></h3>
+            <p class="review__text"><span class="en">The order was delivered on time, all additions to the order were completed, 5 stars!</span><span class="ru">Заказ был сдан в сроки, все дополнения к заказу были выполнены, 5 звёзд!</span></p>
+        </article>
+        <article class="reviews__review review" id="3">
+            <p class="review__username"><span class="en">Review 3</span><span class="ru">Отзыв 3</span></p>
+            <div class="review__stars">
+                <div class="review__star">
+                    <img src="../img/components/index/review/fill_star.svg" class="" alt="">
+                    <img src="../img/components/index/review/filles_star.svg" class="_hide-star" alt="">
+                </div>
+                <div class="review__star">
+                    <img src="../img/components/index/review/fill_star.svg" class="" alt="">
+                    <img src="../img/components/index/review/filles_star.svg" class="_hide-star" alt="">
+                </div>
+                <div class="review__star">
+                    <img src="../img/components/index/review/fill_star.svg" class="" alt="">
+                    <img src="../img/components/index/review/filles_star.svg" class="_hide-star" alt="">
+                </div>
+                <div class="review__star">
+                    <img src="../img/components/index/review/fill_star.svg" class="" alt="">
+                    <img src="../img/components/index/review/filles_star.svg" class="_hide-star" alt="">
+                </div>
+                <div class="review__star">
+                    <img src="../img/components/index/review/fill_star.svg" class="_hide-star" alt="">
+                    <img src="../img/components/index/review/filles_star.svg" class="" alt="">
+                </div>
+            </div>
+            <h3 class="review__main-text"><span class="en">Made on time</span><span class="ru">Cделан вовремя!</span></h3>
+            <p class="review__text"><span class="en">The conditions were met a little incorrectly, but these are trifles, the order was made on time</span><span class="ru">Немного некорректно были выполнены условия, но это мелочи, заказ был сделан вовремя!</span></p>
+        </article>
+        <article class="reviews__review review" id="4">
+            <p class="review__username"><span class="en">Review 4</span><span class="ru">Отзыв 4</span></p>
+            <div class="review__stars">
+                <div class="review__star">
+                    <img src="../img/components/index/review/fill_star.svg" class="" alt="">
+                    <img src="../img/components/index/review/filles_star.svg" class="_hide-star" alt="">
+                </div>
+                <div class="review__star">
+                    <img src="../img/components/index/review/fill_star.svg" class="" alt="">
+                    <img src="../img/components/index/review/filles_star.svg" class="_hide-star" alt="">
+                </div>
+                <div class="review__star">
+                    <img src="../img/components/index/review/fill_star.svg" class="" alt="">
+                    <img src="../img/components/index/review/filles_star.svg" class="_hide-star" alt="">
+                </div>
+                <div class="review__star">
+                    <img src="../img/components/index/review/fill_star.svg" class="_hide-star" alt="">
+                    <img src="../img/components/index/review/filles_star.svg" class="" alt="">
+                </div>
+                <div class="review__star">
+                    <img src="../img/components/index/review/fill_star.svg" class="_hide-star" alt="">
+                    <img src="../img/components/index/review/filles_star.svg" class="" alt="">
+                </div>
+            </div>
+            <h3 class="review__main-text"><span class="en">They were late</span><span class="ru">Опоздали</span></h3>
+            <p class="review__text"><span class="en">They were late with the terms of the order, but all the conditions were met. +-rep</span><span class="ru">Опоздали со сроками заказа, но все условия были выполнены. +-rep </span></p>
+        </article>
+        <article class="reviews__review review" id="5">
+            <p class="review__username"><span class="en">Review 5</span><span class="ru">Отзыв 5</span></p>
+            <div class="review__stars">
+                <div class="review__star">
+                    <img src="../img/components/index/review/fill_star.svg" class="" alt="">
+                    <img src="../img/components/index/review/filles_star.svg" class="_hide-star" alt="">
+                </div>
+                <div class="review__star">
+                    <img src="../img/components/index/review/fill_star.svg" class="" alt="">
+                    <img src="../img/components/index/review/filles_star.svg" class="_hide-star" alt="">
+                </div>
+                <div class="review__star">
+                    <img src="../img/components/index/review/fill_star.svg" class="" alt="">
+                    <img src="../img/components/index/review/filles_star.svg" class="_hide-star" alt="">
+                </div>
+                <div class="review__star">
+                    <img src="../img/components/index/review/fill_star.svg" class="" alt="">
+                    <img src="../img/components/index/review/filles_star.svg" class="_hide-star" alt="">
+                </div>
+                <div class="review__star">
+                    <img src="../img/components/index/review/fill_star.svg" class="" alt="">
+                    <img src="../img/components/index/review/filles_star.svg" class="_hide-star" alt="">
+                </div>
+            </div>
+            <h3 class="review__main-text"><span class="en">The best shop!</span><span class="ru">Самый лучший магазин!</span></h3>
+            <p class="review__text"><span class="en">The best shop! ++++++++rep</span><span class="ru">Самый лучший магазин! ++++++++rep</span></p>
+        </article>
+    </div>
+</section>
+            </div>
+        </main>
+        <section class="payment-error">
+    <div class="payment-error__bgr"></div>
+    <div class="payment-error__container">
+        <div class="payment-error__image">
+            <img src="../img/icons/payment/error.svg" alt="">
+        </div>
+        <p class="payment-error__title">Operation error. Try later!</p>
+        <button class="payment-error__btn">OK</button>
+    </div>
+</section>
+        <footer class="footer">
+    <div class="content">
+        <nav class="footer__nav">
+            <h2 class="footer__nav-title"><span class="en">Navigation</span><span class="ru">Навигация</span></h2>
+            <ul class="footer__nav-list">
+                <li class="footer__nav-item footer__nav-services"><a href="./all_services.html#services" class="footer__nav-item-btn"><span class="en">Services</span><span class="ru">Услуги</span></a></li>
+                <li class="footer__nav-item footer__nav-personal-service"><a href="./services.html#other_product" class="footer__nav-item-btn"><span class="en">Personal service</span><span class="ru">Персональная услуга</span></a></li>
+                <li class="footer__nav-item footer__nav-advantages"><a href="./index.html#advantages" class="footer__nav-item-btn"><span class="en">Advantages</span><span class="ru">Преимущества</span></a></li>
+                <li class="footer__nav-item footer__nav-reviews"><a href="./index.html#reviews" class="footer__nav-item-btn"><span class="en">Reviews</span><span class="ru">Отзывы</span></a></li>
+            </ul>
+        </nav>
+        <div class="footer__site-info">
+            <p class="footer__rules"><span class="en">All rights reserved</span><span class="ru">Все права защищены</span></p>
+            <p class="footer__year">WoooW, 2023</p>
+        </div>
+        <div class="footer__support">
+            <h2 class="footer__support-title"><span class="en">Support</span><span class="ru">Поддержка</span></h2>
+            <ul class="footer__support-list">
+                <li class="footer__support-item">
+                    <p class="footer__support-email">pochta_pochta@gmail.com</p>
+                </li>
+                <li class="footer__support-item footer__support-tlg">
+                    <a href="https://t.me/mxvlvkn" class="footer__support-tlg-link">@mxvlvkn</p></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+        <script src="../js/header.js"></script>
+        <script src="../js/product_page.js"></script>
+        <script src="../js/review.js"></script>
+    </body>
+</html>

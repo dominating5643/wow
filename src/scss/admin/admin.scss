@@ -1,0 +1,18 @@
+.admin {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    color: white;
+
+    &__title {
+        margin-bottom: calc_rem(8);
+        font-size: calc_rem(36);
+    }
+    &__subtitle {
+        font-size: calc_rem(28);
+        margin-bottom: calc_rem(20);
+    }
+    &__orders {
+        margin-bottom: calc_rem(15);
+    }
+}

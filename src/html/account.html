@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bayon&display=swap" rel="stylesheet">
+        <title></title>
+    </head>
+    <body class="account">
+            <header class="header">
+    <div class="content">
+        <div class="left-row">
+            <div class="left-row__logo">
+                <a href="./index.html">
+                    <img src="../img/icons/header/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="left-row__state">
+                <button type="button" src="#" class="left-row__state-btn left-row__contacts-btn"><span class="en">Contacts</span><span class="ru">Контакты</span></button>
+                <a type="button" href="./admin.html" class="left-row__state-btn header__admin"><span class="en">Admin</span><span class="ru">Админ</span></a>
+                <ul class="left-row__state-list">
+                    <li class="left-row__state-item left-row__state-email">pochta_pochta@gmail.com</li>
+                    <li class="left-row__state-item left-row__state-tlg"><a href="https://t.me/mxvlvkn">@mxvlvkn</a></li>
+                </ul>
+            </div>
+            <a href="https://t.me/+t5QGNygvXzYxZWFi" class="left-row__tlg">
+                <div class="left-row__tlg-img"><img src="../img/icons/header/tlg.svg" alt=""></div>
+                <p class="left-row__tlg-title"><span class="en">Telegram Chat</span><span class="ru">Telegram Чат</span></p>
+            </a>
+            <a href="https://t.me/+t5QGNygvXzYxZWFi" class="left-row__chat">
+                <div class="left-row__chat-img"><img src="../img/icons/header/chat.svg" alt=""></div>
+                <p class="left-row__chat-title"><span class="en">Our Chat</span><span class="ru">Наш чат</span></p>
+            </a>
+        </div>
+        <div class="right-row">
+            <div class="header__languages languages">
+                <div class="languages__en languages__flag languages__selected">
+                    <img src="../img/components/header/en.png" alt="">
+                </div>
+                <div class="languages__ru languages__flag languages__not-selected">
+                    <img src="../img/components/header/ru.png" alt="">
+                </div>
+            </div>
+            <button class="right-row__reg"><span class="en">Sign up</span><span class="ru">Регистрация</span></button>
+            <button class="right-row__log"><span class="en">Log in</span><span class="ru">Вход</span></button>
+            <button class="right-row__exit"><span class="en">Exit</span><span class="ru">Выйти</span></button>
+            <a href="./account.html" class="right-row__account"><span class="en">Account</span><span class="ru">Аккаунт</span></a>
+            <div class="header__burger burger">
+                <button type="button" class="burger__button">
+                    <span class="burger__line burger__line-1"></span>
+                    <span class="burger__line burger__line-2"></span>
+                    <span class="burger__line burger__line-3"></span>
+                </button>
+                <div class="burger__list"></div>
+            </div>
+        </div>
+    </div>
+    <section class="header__sign-up-popup sign-up">
+    <div class="sign-up_bgr"></div>
+    <div class="sign-up__container">
+        <button type="button" class="sign-up__close">
+            <span class="sign-up__close-line sign-up__close-line-1"></span>
+            <span class="sign-up__close-line sign-up__close-line-2"></span>
+        </button>
+        <button type="button" class="sign-up__back">
+            <span class="sign-up__back-line sign-up__back-line-1"></span>
+            <span class="sign-up__back-line sign-up__back-line-2"></span>
+            <span class="sign-up__back-line sign-up__back-line-3"></span>
+        </button>
+        <article class="sign-up__form-container sign-up__registration">
+            <h2 class="sign-up__title"><span class="en">Sign up</span><span class="ru">Регистрация</span></h2>
+            <form action="#" class="sign-up__form sign-up__form-registration">
+                    <div class="sign-up__email-container sign-up__input-container">
+                    <label class="sign-up__email-label sign-up__label" for="singUpEmail"><span class="en">Email</span><span class="ru">Эл. Почта</span></label>
+                    <input type="email" value="" name="singUpEmail" class="sign-up__email sign-up__input" tabindex="1">
+                </div>
+                <div class="sign-up__nickname-and-tlg-container sign-up__flex-container">
+                    <div class="sign-up__nickname-container sign-up__input-container">
+                        <label class="sign-up__nickname-label sign-up__label" for="singUpNickname"><span class="en">Nickname</span><span class="ru">Никнейм</span></label>
+                        <input type="text" value="" name="singUpNickname" class="sign-up__nickname sign-up__input" tabindex="2">
+                    </div>
+                    <div class="sign-up__tlg-container sign-up__input-container">
+                        <label class="sign-up__tlg-label sign-up__label" for="singUpTlg"><span class="en">Telegram</span><span class="ru">Телеграм</span></label>
+                        <input type="text" value="" name="singUpTlg" class="sign-up__tlg sign-up__input" placeholder="@telegram" tabindex="3">
+                    </div>
+                </div>
+                <div class="sign-up__passwords-container sign-up__flex-container">
+                    <div class="sign-up__password-container sign-up__input-container">
+                        <label class="sign-up__password-label sign-up__label" for="singUpPassword"><span class="en">Password</span><span class="ru">Пароль</span></label>
+                        <input type="password" value="" name="singUpPassword" class="sign-up__password sign-up__input"  tabindex="4">
+                    </div>
+                    <div class="sign-up__repeat-password-container sign-up__input-container">
+                        <label class="sign-up__repeat-password-label sign-up__label" for="singUpRepeatPassword"><span class="en">Repeat password</span><span class="ru">Повторите пароль</span></label>
+                        <input type="password" value="" name="singUpRepeatPassword" class="sign-up__repeat-password sign-up__input" tabindex="5">
+                    </div>
+                </div>
+                <p class="sign-up__error-message sign-up__reg-error-message"></p>
+                <button type="submit" class="sign-up__submit sign-up__submit-registration"  tabindex="6"><span class="en">Send</span><span class="ru">Отправить</span></button>
+            </form>
+        </article>
+        <article class="sign-up__form-container sign-up__activation">
+            <h2 class="sign-up__title"><span class="en">Confirmation</span><span class="ru">Подтверждение</span></h2>
+            <p class="sign-up__subtitle"></p>
+            <form action="#" class="sign-up__form sign-up__form-activation">
+                <label class="sign-up__code-label sign-up__label" for="singUpCode"><span class="en">Code</span><span class="ru">Код</span></label>
+                <input type="text" value="" name="singUpCode" class="sign-up__code sign-up__input" placeholder="" tabindex="7">
+                <div class="sign-up__reorder-container">
+                    <button type="button" class="sign-up__reorder"><span class="en">Send code again</span><span class="ru">Отправить код повторно</span></button>
+                    <p class="sign-up__reorder-counter">2:00</p>
+                </div>
+                <p class="sign-up__error-message sign-up__code-error-message"></p>
+                <button type="submit" class="sign-up__submit sign-up__submit-activation"  tabindex="8"><span class="en">Send</span><span class="ru">Отправить</span></button>
+            </form>
+        </article>
+    </div>
+</section>
+    <section class="header__log-in-popup log-in">
+    <div class="log-in_bgr"></div>
+    <div class="log-in__container">
+        <button type="button" class="log-in__back">
+            <span class="log-in__back-line log-in__back-line-1"></span>
+            <span class="log-in__back-line log-in__back-line-2"></span>
+            <span class="log-in__back-line log-in__back-line-3"></span>
+        </button>
+        <button type="button" class="log-in__close">
+            <span class="log-in__close-line log-in__close-line-1"></span>
+            <span class="log-in__close-line log-in__close-line-2"></span>
+        </button>
+        <article class="log-in__main-container">
+            <h2 class="log-in__title log-in__main-title"><span class="en">Log in</span><span class="ru">Вход</span></h2>
+            <form action="#" class="log-in__form">
+                <label class="log-in__email-label log-in__label" for="logInEmail"><span class="en">Email</span><span class="ru">Эл. почта</span></label>
+                <input type="email" value="" name="logInEmail" class="log-in__email log-in__input" placeholder="" tabindex="9">
+                <label class="log-in__password-label log-in__label" for="logInPassword"><span class="en">Password</span><span class="ru">Пароль</span></label>
+                <input type="password" value="" name="logInPassword" class="log-in__password log-in__input" placeholder="" tabindex="10">
+                <button type="button" class="log-in__restore-password"><span class="en">Restore password</span><span class="ru">Восстановить пароль</span></button>
+                <p class="log-in__error-message"></p>
+                <button class="log-in__submit"><span class="en">Log in</span><span class="ru">Войти</span></button>
+            </form>
+        </article>
+        <article class="log-in__confirmation-container">
+            <h2 class="log-in__title log-in__confirmation-title"><span class="en">Confirmation</span><span class="ru">Подтверждение</span></h2>
+            <form action="#" class="log-in__confirmation-form">
+                <label class="log-in__confirmation-email-label log-in__label" for="logInConfirmationEmail"><span class="en">Email</span><span class="ru">Эл. почта</span></label>
+                <input type="email" value="" name="logInConfirmationEmail" class="log-in__confirmation-email log-in__input" placeholder="">
+                <div class="log-in__confirmation-submit-container">
+                    <button class="log-in__confirmation-submit"><span class="en">Get code</span><span class="ru">Получить код</span></button>
+                    <p class="log-in__confirmation-counter"></p>
+                </div>
+            </form>
+            <p class="log-in__confirmation-error"></p>
+            <form action="#" class="log-in__code-form">
+                <label class="log-in__code-label log-in__label" for="logInCode"><span class="en">Code</span><span class="ru">Код</span></label>
+                <input type="text" value="" name="logInCode" class="log-in__code log-in__input" placeholder="">
+                <button class="log-in__code-submit _disabled"><span class="en">Send</span><span class="ru">Отправить</span></button>
+            </form>
+        </article>
+        <article class="log-in__new-pass-container">
+            <h2 class="log-in__title log-in__new-pass-title"><span class="en">New password</span><span class="ru">Новый пароль</span></h2>
+            <form action="#" class="log-in__new-pass-form">
+                <label class="log-in__new-pass-label log-in__label" for="logInNewPass"><span class="en">Password</span><span class="ru">Пароль</span></label>
+                <input type="password" value="" name="logInNewPass" class="log-in__new-pass log-in__input" placeholder="">
+                <label class="log-in__repeat-new-pass-label log-in__label" for="logInRepeatNewPass"><span class="en">Repeat password</span><span class="ru">Повторите пароль</span></label>
+                <input type="password" value="" name="logInRepeatNewPass" class="log-in__repeat-new-pass log-in__input" placeholder="">
+                <p class="log-in__new-pass-error"></p>
+                <button class="log-in__new-pass-submit"><span class="en">Send</span><span class="ru">Отправить</span></button>
+            </form>
+        </article>
+    </div>
+</section>
+</header>
+            <main class="account__main">
+                <div class="content">
+                    <h1 class="account__title"><span class="en">Account</span><span class="ru">Аккаунт</span></h1>
+                    <h2 class="account__subtitle"><span class="en">Orders</span><span class="ru">Заказы</span></h2>
+                    <div class="account__orders"></div>
+                </div>
+            </main>
+            <footer class="footer">
+    <div class="content">
+        <nav class="footer__nav">
+            <h2 class="footer__nav-title"><span class="en">Navigation</span><span class="ru">Навигация</span></h2>
+            <ul class="footer__nav-list">
+                <li class="footer__nav-item footer__nav-services"><a href="./all_services.html#services" class="footer__nav-item-btn"><span class="en">Services</span><span class="ru">Услуги</span></a></li>
+                <li class="footer__nav-item footer__nav-personal-service"><a href="./services.html#other_product" class="footer__nav-item-btn"><span class="en">Personal service</span><span class="ru">Персональная услуга</span></a></li>
+                <li class="footer__nav-item footer__nav-advantages"><a href="./index.html#advantages" class="footer__nav-item-btn"><span class="en">Advantages</span><span class="ru">Преимущества</span></a></li>
+                <li class="footer__nav-item footer__nav-reviews"><a href="./index.html#reviews" class="footer__nav-item-btn"><span class="en">Reviews</span><span class="ru">Отзывы</span></a></li>
+            </ul>
+        </nav>
+        <div class="footer__site-info">
+            <p class="footer__rules"><span class="en">All rights reserved</span><span class="ru">Все права защищены</span></p>
+            <p class="footer__year">WoooW, 2023</p>
+        </div>
+        <div class="footer__support">
+            <h2 class="footer__support-title"><span class="en">Support</span><span class="ru">Поддержка</span></h2>
+            <ul class="footer__support-list">
+                <li class="footer__support-item">
+                    <p class="footer__support-email">pochta_pochta@gmail.com</p>
+                </li>
+                <li class="footer__support-item footer__support-tlg">
+                    <a href="https://t.me/mxvlvkn" class="footer__support-tlg-link">@mxvlvkn</p></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+        <script src="../js/header.js"></script>
+        <script src="../js/account.js"></script>
+    </body>
+</html>

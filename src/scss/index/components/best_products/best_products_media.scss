@@ -1,0 +1,19 @@
+.best-products {
+    @media (max-width: 72em) {
+        &__products-container {
+             gap: calc_rem(14);
+        }
+    }
+
+    @media (max-width: 57em) {
+        &__products-container {
+            gap: calc_rem(10);
+        }
+    }
+
+    @media (max-width: 37em) {
+        &__products-container {
+            gap: calc_rem(4);
+        }
+    }
+}

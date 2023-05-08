@@ -1,0 +1,19 @@
+.product {
+    @media (max-width: 72em) {
+        & .content {
+             gap: calc_rem(14);
+        }
+    }
+
+    @media (max-width: 57em) {
+        & .content {
+            gap: calc_rem(10);
+        }
+    }
+
+    @media (max-width: 37em) {
+        & .content {
+            gap: calc_rem(4);
+        }
+    }
+}

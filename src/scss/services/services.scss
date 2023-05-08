@@ -1,0 +1,51 @@
+.service {
+    padding-top: calc_rem(20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: calc_rem(24);
+
+    &__item {
+        margin-bottom: calc_rem(20);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 calc_rem(6) rgba($color: black, $alpha: 0.5);
+        border-radius: calc_rem(4);
+        width: 100%;
+        min-height: calc_rem(250);
+    }
+    &__all {
+        background: 0 50%/100% auto url('../img/components/index/main_screen/bgr.png') no-repeat;
+    }
+    &__wow {
+        background: 0 20%/100% auto url('../img/components/services/wow.webp') no-repeat;
+    }
+    &__ovw {
+        background: 0 50%/100% auto url('../img/components/services/ovw.jpg') no-repeat;
+    }
+    &__poe {
+        background: 0 50%/100% auto url('../img/components/services/poe.jpg') no-repeat;
+    }
+    &__btn {
+        z-index: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: calc_rem(420);
+        height: calc_rem(55);
+        border-radius: calc_rem(4);
+        background-color: $color_2;
+
+        &:hover {
+            background-color: $color_2_hover;
+        }
+
+        &:active {
+            background-color: $color_2_active;
+        }
+    }
+}
+

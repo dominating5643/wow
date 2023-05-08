@@ -1,0 +1,59 @@
+<section class="header__sign-up-popup sign-up">
+    <div class="sign-up_bgr"></div>
+    <div class="sign-up__container">
+        <button type="button" class="sign-up__close">
+            <span class="sign-up__close-line sign-up__close-line-1"></span>
+            <span class="sign-up__close-line sign-up__close-line-2"></span>
+        </button>
+        <button type="button" class="sign-up__back">
+            <span class="sign-up__back-line sign-up__back-line-1"></span>
+            <span class="sign-up__back-line sign-up__back-line-2"></span>
+            <span class="sign-up__back-line sign-up__back-line-3"></span>
+        </button>
+        <article class="sign-up__form-container sign-up__registration">
+            <h2 class="sign-up__title"><span class="en">Sign up</span><span class="ru">Регистрация</span></h2>
+            <form action="#" class="sign-up__form sign-up__form-registration">
+                    <div class="sign-up__email-container sign-up__input-container">
+                    <label class="sign-up__email-label sign-up__label" for="singUpEmail"><span class="en">Email</span><span class="ru">Эл. Почта</span></label>
+                    <input type="email" value="" name="singUpEmail" class="sign-up__email sign-up__input" tabindex="1">
+                </div>
+                <div class="sign-up__nickname-and-tlg-container sign-up__flex-container">
+                    <div class="sign-up__nickname-container sign-up__input-container">
+                        <label class="sign-up__nickname-label sign-up__label" for="singUpNickname"><span class="en">Nickname</span><span class="ru">Никнейм</span></label>
+                        <input type="text" value="" name="singUpNickname" class="sign-up__nickname sign-up__input" tabindex="2">
+                    </div>
+                    <div class="sign-up__tlg-container sign-up__input-container">
+                        <label class="sign-up__tlg-label sign-up__label" for="singUpTlg"><span class="en">Telegram</span><span class="ru">Телеграм</span></label>
+                        <input type="text" value="" name="singUpTlg" class="sign-up__tlg sign-up__input" placeholder="@telegram" tabindex="3">
+                    </div>
+                </div>
+                <div class="sign-up__passwords-container sign-up__flex-container">
+                    <div class="sign-up__password-container sign-up__input-container">
+                        <label class="sign-up__password-label sign-up__label" for="singUpPassword"><span class="en">Password</span><span class="ru">Пароль</span></label>
+                        <input type="password" value="" name="singUpPassword" class="sign-up__password sign-up__input"  tabindex="4">
+                    </div>
+                    <div class="sign-up__repeat-password-container sign-up__input-container">
+                        <label class="sign-up__repeat-password-label sign-up__label" for="singUpRepeatPassword"><span class="en">Repeat password</span><span class="ru">Повторите пароль</span></label>
+                        <input type="password" value="" name="singUpRepeatPassword" class="sign-up__repeat-password sign-up__input" tabindex="5">
+                    </div>
+                </div>
+                <p class="sign-up__error-message sign-up__reg-error-message"></p>
+                <button type="submit" class="sign-up__submit sign-up__submit-registration"  tabindex="6"><span class="en">Send</span><span class="ru">Отправить</span></button>
+            </form>
+        </article>
+        <article class="sign-up__form-container sign-up__activation">
+            <h2 class="sign-up__title"><span class="en">Confirmation</span><span class="ru">Подтверждение</span></h2>
+            <p class="sign-up__subtitle"></p>
+            <form action="#" class="sign-up__form sign-up__form-activation">
+                <label class="sign-up__code-label sign-up__label" for="singUpCode"><span class="en">Code</span><span class="ru">Код</span></label>
+                <input type="text" value="" name="singUpCode" class="sign-up__code sign-up__input" placeholder="" tabindex="7">
+                <div class="sign-up__reorder-container">
+                    <button type="button" class="sign-up__reorder"><span class="en">Send code again</span><span class="ru">Отправить код повторно</span></button>
+                    <p class="sign-up__reorder-counter">2:00</p>
+                </div>
+                <p class="sign-up__error-message sign-up__code-error-message"></p>
+                <button type="submit" class="sign-up__submit sign-up__submit-activation"  tabindex="8"><span class="en">Send</span><span class="ru">Отправить</span></button>
+            </form>
+        </article>
+    </div>
+</section>

@@ -1,0 +1,181 @@
+.payment {
+    &__body {
+        //background-color: $color_6;
+        background: 0 0 / 100% auto url('../img/components/index/main_bgr.png');
+
+        & main {
+            // background: $color_6;
+            background: rgba($color: #000000, $alpha: 0);
+        }
+    }
+    &__header {
+        padding-top: calc_rem(40);
+        margin-bottom: calc_rem(20);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__image {
+        position: relative;
+        width: calc_rem(300);
+        height: calc_rem(100);
+
+        & img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__title {
+        font-size: calc_rem(50);
+        color: white;
+        font-family: Bayon;
+        letter-spacing: calc_rem(4);
+        text-shadow: 0 0 10px rgba($color: #050500, $alpha: 1.0);
+    }
+    &__number {
+        margin-bottom: calc_rem(8);
+        font-size: calc_rem(30);
+        color: white;
+    }
+    &__subtitle {
+        margin-bottom: calc_rem(6);
+        font-size: calc_rem(35);
+        font-weight: bold;
+        color: white;
+    }
+    &__price {
+        margin-bottom: calc_rem(10);
+        font-size: calc_rem(25);
+        color: white;
+    }
+    &__form {
+        color: white;
+    }
+    &__card-container {
+        padding: calc_rem(16);
+        margin-bottom: calc_rem(15);
+        box-shadow: 0 0 10px rgba($color: #050500, $alpha: 1.0);
+        border-radius: calc_rem(5);
+        background-color: $color_3;
+        width: calc_rem(470);
+        height: calc_rem(300);
+    }
+    &__card-label {
+    }
+    &__card-number-label {}
+    &__card-input {
+        margin-top: calc_rem(2);
+        display: block;
+        padding: calc_rem(5);
+        font-size: calc_rem(18);
+        color: white;
+        background-color: $color_3;
+        border: 2px solid $color_2;
+        width: calc_rem(230);
+        height: calc_rem(38);
+        border-radius: calc_rem(3);
+    }
+    &__card-number {
+        margin-bottom: calc_rem(40);
+        width: calc_rem(300);
+    }
+    &__card-data-cvv-container {
+        margin-bottom: calc_rem(60);
+        display: flex;
+        justify-content: space-between;
+    }
+    &__card-data-container {}
+    &__card-data-label {}
+    &__card-data {
+        display: flex;
+        gap: calc_rem(8);
+        align-items: center;
+    }
+    &__card-first-data {
+        width: calc_rem(80);
+        height: calc_rem(35);
+    }
+    &__data-symbol {
+        font-size: calc_rem(25);
+    }
+    &__card-second-data {
+        width: calc_rem(80);
+        height: calc_rem(35);
+    }
+    &__card-cvv-container {}
+    &__card-cvv-label {}
+    &__card-cvv {
+        width: calc_rem(80);
+        height: calc_rem(35);
+    }
+    &__card-name-label {}
+    &__card-name {
+        width: calc_rem(350);
+    }
+    &__submit {
+        margin-bottom: calc_rem(25);
+        display: block;
+        box-shadow: 0 0 10px rgba($color: #050500, $alpha: 1.0);
+        width: calc_rem(110);
+        height: calc_rem(45);
+        background-color: $color_2;
+        border-radius: calc_rem(5);
+
+        &:hover {
+            background-color: $color_2_hover;
+        }
+
+        &:active {
+            background-color: $color_2_active;
+        }
+    }
+    &__description {
+        display: flex;
+        justify-content: space-between;
+        gap: calc_rem(10);
+    }
+    &__description-article {
+        margin-bottom: calc_rem(10);
+        padding: calc_rem(8);
+        background-color: $color_5;
+        min-height: calc_rem(100);
+        flex: 0 1 25%;
+        border-radius: calc_rem(2);
+        box-shadow: 0 0 10px rgba($color: #050500, $alpha: 1.0);
+    }
+    &__description-object {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__description-title {
+        font-size: calc_rem(22);
+        margin-bottom: calc_rem(8);
+    }
+    &__description-subtitle {
+        color: $color_2;
+        margin-right: calc_rem(6);
+    }
+    &__description-value {}
+}
+
+.payment {
+    &__form {}
+    &__card-number-label {}
+    &__card-number {}
+    &__card-data-cvv-container {}
+    &__card-data-container {}
+    &__card-data-label {}
+    &__card-data {}
+    &__card-first-data {}
+    &__card-second-data {}
+    &__card-cvv-container {}
+    &__card-cvv-label {}
+    &__card-cvv {}
+    &__card-name-label {}
+    &__card-name {}
+}
+.payment-symbol {
+}

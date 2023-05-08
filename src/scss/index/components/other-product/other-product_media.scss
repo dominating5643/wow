@@ -1,0 +1,33 @@
+@media (max-width: 24em) {
+    .other-product {
+        &__card {
+            padding: calc_rem(33) calc_rem(20);
+        }
+        &__title {
+            margin-bottom: calc_rem(33);
+            font-size: calc_rem(33);
+        }
+        &__label {
+            margin-bottom: calc_rem(6);
+            font-size: calc_rem(20);
+        }
+        &__textarea {
+            padding: calc_rem(8);
+            margin-bottom: calc_rem(25);
+            font-size: calc_rem(15);
+            width: calc_rem(250);
+            height: calc_rem(108);
+        }
+        &__inpit {
+            padding: calc_rem(4);
+            margin-bottom: calc_rem(58);
+            font-size: calc_rem(15);
+            width: calc_rem(208);
+            height: calc_rem(33);
+        }
+        &__submit {
+            padding: calc_rem(10) calc_rem(16);
+            font-size: calc_rem(16);
+        }
+    }
+} 

@@ -1,0 +1,291 @@
+.header {
+    position: relative;
+    z-index: 2;
+    @extend %shadow;
+    font-size: calc_rem(18);
+    color: white;
+    height: calc_rem(70);
+    background-color: $color_1;
+
+    & .content {
+        @extend %flex_vc;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    &__admin {
+        display: none !important;
+        padding: calc_rem(13) calc_rem(20) !important;
+
+        &._shown {
+            display: block !important;
+        }
+    }
+}
+.left-row {
+    @extend %flex_vc;
+
+    &__state {
+        position: relative;
+    }
+    &__state-btn {
+        display: inline-block;
+        margin-right: calc_rem(15);
+        padding: 12px 17px;
+        font-weight: 700;
+        background-color: $color_2;
+        border-radius: calc_rem(3);
+
+        @media (min-width: 38.0625em) {
+            &:hover {
+                background-color: $color_2_hover;
+            }
+    
+            &:active {
+                background-color: $color_2_active;
+            }
+        }
+    }
+    &__contacts-btn {
+        &._hidden {
+            display: none;
+        }
+    }
+    
+    &__state-list {
+        padding: calc_rem(10);
+        padding-bottom: calc_rem(4);
+        position: absolute;
+        z-index: 20;
+        left: 0;
+        top: 110%;
+        opacity: 0;
+        visibility: hidden;
+        font-size: calc_rem(14);
+        box-shadow: 0 0 1px $color_2;
+        background-color: $color_1;
+        border-radius: calc_rem(5);
+        transition-duration: 200ms;
+
+        &._shown {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &__state-item {
+        margin-bottom: calc_rem(10);
+    }
+    &__state-email {
+        padding: calc_rem(8) 0 calc_rem(8) calc_rem(34);
+        background: -4px 50% / 38px 38px url('../img/icons/header/email.svg') no-repeat;
+    }
+    &__state-tlg {
+        background: 0 50% / 30px 30px url('../img/icons/header/tlg_contacts.svg') no-repeat;
+
+        & a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: calc_rem(8) 0 calc_rem(8) calc_rem(34);
+
+            &:hover {
+                text-decoration: 1px underline;
+            }
+        }
+    }
+    &__logo {
+        margin-right: calc_rem(10);
+        width: calc_rem(150);
+        height: calc_rem(70);
+        position: relative;
+
+        & a {
+            display: block;
+            @extend %full_size;
+        }
+
+        & img {
+            @extend %image;
+        }
+    }
+    &__tlg {
+        display: flex;
+        align-items: center;
+        margin-right: calc_rem(15);
+
+        &:hover {
+            text-decoration: 1px solid underline;
+        }
+
+        &:active {
+            text-shadow: 0 0 1px white;
+        }
+    }
+    &__tlg-img {
+        margin-right: calc_rem(5);
+        width: calc_rem(35);
+        height: calc_rem(35);
+        position: relative;
+
+        & img {
+            @extend %image;
+        }
+    }
+    &__tlg-title {
+        font-size: 14;
+        color: $color_4;
+    }
+    &__chat-title {
+        font-size: 14;
+        color: $color_4;
+    }
+    &__chat {
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            text-decoration: 1px solid underline;
+        }
+
+        &:active {
+            text-shadow: 0 0 1px white;
+        }
+    }
+    &__chat-img {
+        margin-right: calc_rem(5);
+        width: calc_rem(35);
+        height: calc_rem(35);
+        position: relative;
+
+        & img {
+            @extend %image;
+            fill: #b4abbc;
+        }
+    }
+    &__chat-title {
+        font-size: 14;
+        color: #b4abbc;
+    }
+}
+.right-row {
+    display: flex;
+    gap: calc_rem(15);
+    z-index: 0;
+
+    &__languages {}
+    &__reg {
+        &:hover {
+            text-decoration: 1px solid underline;
+        }
+
+        &:active {
+            text-shadow: 0 0 2px white;
+        }
+
+        &._hidden {
+            display: none;
+        }
+    }
+    &__log {
+        display: inline-block;
+        padding: 12px 17px;
+        font-weight: 700;
+        background-color: $color_2;
+        border-radius: calc_rem(3);
+
+        &:hover {
+            background-color: $color_2_hover;
+        }
+
+        &:active {
+            background-color: $color_2_active;
+        }
+
+        &._hidden {
+            display: none;
+        }
+    }
+    &__exit {
+        display: none;
+
+        &:hover {
+            text-decoration: 1px solid underline;
+        }
+
+        &:active {
+            text-shadow: 0 0 2px white;
+        }
+
+        &._shown {
+            display: block;
+        }
+    }
+    &__account {
+        display: none;
+        padding: 14px 17px 12px 17px;
+        font-weight: 700;
+        background-color: $color_2;
+        border-radius: calc_rem(3);
+
+        &:hover {
+            background-color: $color_2_hover;
+        }
+
+        &:active {
+            background-color: $color_2_active;
+        }
+
+        &._shown {
+            display: inline-block;
+        }
+    }
+}
+
+.languages {
+    position: relative;
+    z-index: 1;
+    width: calc_rem(45);
+    height: calc_rem(45);
+
+    @media screen {
+        &:hover .languages__ru {
+            box-shadow: 0 0 20px $color_2;
+        }
+    
+        &:hover .languages__en {
+            box-shadow: 0 0 20px $color_2;
+        }
+    }
+
+    &__flag {
+        position: absolute;
+        border-radius: 50%;
+        overflow: hidden;
+
+        & img {
+            display: block;
+            position: absolute;
+            left: -1px;
+            top: -1px;
+            width: 110%;
+            height: 110%;
+        }
+    }
+    &__ru {}
+    &__selected {
+        z-index: 2;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    &__en {}
+    &__not-selected {
+        z-index: 3;
+        @extend %shadow;
+        right: 0;
+        bottom: 0;
+        width: calc_rem(20);
+        height: calc_rem(20);
+    }
+}

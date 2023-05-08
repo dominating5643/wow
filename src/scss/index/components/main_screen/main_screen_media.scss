@@ -1,0 +1,101 @@
+@media (max-width: 55rem) {
+    .main-screen {
+        background-position: 25% 50%;
+    
+        & .content {
+            padding: calc_rem(54) calc_rem(15) calc_rem(40);
+        }
+    
+        &__black-bgr {
+        }
+        &__title {
+            margin-bottom: calc_rem(17);
+            line-height: 1.25;
+        }
+        &__subtitle {
+            margin-bottom: calc_rem(47);
+            font-size: calc_rem(26);
+        }
+        &__view {
+            padding: calc_rem(20) calc_rem(180);
+            font-size: calc_rem(24);
+        }
+    }
+}
+
+@media (max-width: 44rem) {
+    .main-screen {
+        background-position: 28% 42%;
+    
+        & .content {
+            padding: calc_rem(45) calc_rem(15) calc_rem(33);
+        }
+    
+        &__black-bgr {
+        }
+        &__title {
+            margin-bottom: calc_rem(14);
+            line-height: 1;
+            font-size: calc_rem(40);
+        }
+        &__subtitle {
+            margin-bottom: calc_rem(39);
+            font-size: calc_rem(21);
+        }
+        &__view {
+            padding: calc_rem(17) calc_rem(150);
+            font-size: calc_rem(20);
+        }
+    }
+}
+
+@media (max-width: 38rem) {
+    .main-screen {
+    
+        & .content {
+            padding: calc_rem(31) calc_rem(15) calc_rem(23);
+        }
+    
+        &__black-bgr {
+        }
+        &__title {
+            margin-bottom: calc_rem(11);
+            line-height: 1;
+            font-size: calc_rem(33);
+        }
+        &__subtitle {
+            margin-bottom: calc_rem(32);
+            font-size: calc_rem(18);
+        }
+        &__view {
+            padding: calc_rem(17) calc_rem(120);
+            font-size: calc_rem(20);
+        }
+    }
+}
+
+@media (max-width: 30rem) {
+    .main-screen {
+        background-position: 32% 38%;
+    
+        & .content {
+            padding: calc_rem(26) calc_rem(15) calc_rem(19);
+        }
+    
+        &__black-bgr {
+        }
+        &__title {
+            margin-bottom: calc_rem(8);
+            line-height: 1;
+            font-size: calc_rem(28);
+        }
+        &__subtitle {
+            margin-bottom: calc_rem(27);
+            font-size: calc_rem(15);
+        }
+        &__view {
+            padding: calc_rem(17) calc_rem(90);
+            font-size: calc_rem(17);
+        }
+    }
+}

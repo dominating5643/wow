@@ -1,0 +1,239 @@
+@media (max-width: 61.25em) {
+    .payment {
+        &__body {
+        }
+        &__header {
+        }
+        &__image {
+        }
+        &__title {
+        }
+        &__number {
+            font-size: calc_rem(25);
+        }
+        &__subtitle {
+            font-size: calc_rem(30);
+        }
+        &__price {
+            font-size: calc_rem(25);
+        }
+        &__form {}
+        &__description {
+            flex-wrap: wrap;
+        }
+        &__description-article {
+            margin-bottom: calc_rem(5);
+            flex: 0 1 49%;
+        }
+        &__description-object {
+        }
+        &__description-title {
+        }
+        &__description-subtitle {
+        }
+        &__description-value {}
+    }
+}
+
+@media (max-width: 50em) {
+    .payment {
+        &__body {
+        }
+        &__header {
+            padding-top: calc_rem(20);
+        }
+        &__image {
+            width: calc_rem(200);
+            height: calc_rem(70);
+        }
+        &__title {
+            font-size: calc_rem(45);
+        }
+        &__number {
+            font-size: calc_rem(25);
+        }
+        &__subtitle {
+            font-size: calc_rem(30);
+        }
+        &__price {
+            font-size: calc_rem(25);
+        }
+        &__form {}
+        &__description {
+            flex-wrap: wrap;
+        }
+        &__description-article {
+            margin-bottom: calc_rem(5);
+            flex: 0 1 49%;
+        }
+        &__description-object {
+        }
+        &__description-title {
+        }
+        &__description-subtitle {
+        }
+        &__description-value {}
+    }
+}
+
+@media (max-width: 33.25em) {
+    .payment {
+        &__body {
+        }
+        &__header {
+        }
+        &__image {
+        }
+        &__title {
+            font-size: calc_rem(35);
+        }
+        &__number {
+            font-size: calc_rem(25);
+        }
+        &__subtitle {
+            font-size: calc_rem(30);
+        }
+        &__price {
+            font-size: calc_rem(25);
+        }
+        &__form {}
+        &__description {
+            flex-wrap: wrap;
+        }
+        &__description-article {
+            flex: 0 1 100%;
+        }
+        &__description-object {
+        }
+        &__description-title {
+        }
+        &__description-subtitle {
+        }
+        &__description-value {}
+    }
+}
+
+@media (max-width: 32em) {
+    .payment {
+        &__form {
+            color: white;
+        }
+        &__card-container {
+            padding: calc_rem(16);
+            margin-bottom: calc_rem(15);
+            border-radius: calc_rem(5);
+            background-color: $color_3;
+            width: calc_rem(290);
+            height: calc_rem(190);
+        }
+        &__card-label {
+            font-size: calc_rem(10);
+        }
+        &__card-number-label {}
+        &__card-input {
+            margin-top: calc_rem(2);
+            display: block;
+            padding: calc_rem(5);
+            font-size: calc_rem(18);
+            color: white;
+            background-color: $color_3;
+            border: 2px solid $color_2;
+            width: calc_rem(230);
+            height: calc_rem(30);
+            border-radius: calc_rem(3);
+        }
+        &__card-number {
+            margin-bottom: calc_rem(7);
+            width: calc_rem(230);
+        }
+        &__card-data-cvv-container {
+            margin-bottom: calc_rem(10);
+            display: flex;
+            justify-content: space-between;
+        }
+        &__card-data-container {}
+        &__card-data-label {}
+        &__card-data {
+            display: flex;
+            gap: calc_rem(8);
+            align-items: center;
+        }
+        &__card-first-data {
+            width: calc_rem(50);
+            height: calc_rem(28);
+        }
+        &__data-symbol {
+            font-size: calc_rem(25);
+        }
+        &__card-second-data {
+            width: calc_rem(50);
+            height: calc_rem(28);
+        }
+        &__card-cvv-container {}
+        &__card-cvv-label {}
+        &__card-cvv {
+            width: calc_rem(50);
+            height: calc_rem(28);
+        }
+        &__card-name-label {}
+        &__card-name {
+            width: calc_rem(250);
+        }
+        &__submit {
+            margin-bottom: calc_rem(25);
+            display: block;
+            width: calc_rem(110);
+            height: calc_rem(45);
+            background-color: $color_2;
+            border-radius: calc_rem(5);
+    
+            &:hover {
+                background-color: $color_2_hover;
+            }
+    
+            &:active {
+                background-color: $color_2_active;
+            }
+        }
+        &__form {}
+    }
+}
+
+@media (max-width: 29em) {
+    .payment {
+        &__body {
+        }
+        &__header {
+            padding-top: calc_rem(15);
+        }
+        &__image {
+            width: calc_rem(130);
+            height: calc_rem(50);
+        }
+        &__title {
+        }
+        &__number {
+            font-size: calc_rem(22);
+        }
+        &__subtitle {
+            font-size: calc_rem(27);
+        }
+        &__price {
+            font-size: calc_rem(22);
+        }
+        
+        &__description {
+            flex-wrap: wrap;
+        }
+        &__description-article {
+            flex: 0 1 100%;
+        }
+        &__description-object {
+        }
+        &__description-title {
+        }
+        &__description-subtitle {
+        }
+        &__description-value {}
+    }
+}

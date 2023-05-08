@@ -1,0 +1,55 @@
+.advantages {
+    display: block;
+    padding: calc_rem(20) calc_rem(30);
+    color: white;
+    margin-bottom: calc_percent(41, 1600);
+    width: 100%;
+    @extend %shadow;
+    //background-color: $color_1;
+    background: 0 0/100% auto url('../img/components/index/main.png');
+
+    border-radius: calc_rem(5);
+
+    &__title {
+        margin-bottom: calc_rem(30);
+        text-align: center;
+        font-size: calc_rem(40);
+    }
+    &__advantage-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: calc_rem(20);
+    }
+    &__advantage {
+        flex: 1 1 33.33%;
+    }
+}
+.advantage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: calc_rem(200);
+    max-width: calc_rem(300);
+
+
+    &__img {
+        margin-bottom: calc_rem(10);
+        position: relative;
+        width: calc_rem(72);
+        height: calc_rem(72);
+
+        & img {
+            @extend %image;
+        }
+    }
+    &__title {
+        margin-bottom: calc_rem(5);
+        font-size: calc_rem(28);
+    }
+    &__description {
+        font-size: calc_rem(14);
+        text-align: center;
+        color: $color_4;
+    }
+}

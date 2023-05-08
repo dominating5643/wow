@@ -1,0 +1,111 @@
+@media (max-width: 43.75em) {
+    .service {
+    padding-top: calc_rem(15);
+    font-size: calc_rem(20);
+    
+        &__item {
+            margin-bottom: calc_rem(15);
+            min-height: calc_rem(200);
+        }
+        &__all {
+            background: 0 50%/100% auto url('../img/components/index/main_screen/bgr.png') no-repeat;
+        }
+        &__wow {
+            background: 0 20%/100% auto url('../img/components/services/wow.webp') no-repeat;
+        }
+        &__ovw {
+            background: 0 70%/100% auto url('../img/components/services/ovw.jpg') no-repeat;
+        }
+        &__poe {
+            background: 0 50%/100% auto url('../img/components/services/poe.jpg') no-repeat;
+        }
+        &__btn {
+            width: calc_rem(330);
+            height: calc_rem(50);
+        }
+    }
+}
+
+@media (max-width: 30em) {
+    .service {
+        padding-top: calc_rem(13);
+        font-size: calc_rem(18);
+    
+        &__item {
+            margin-bottom: calc_rem(13);
+            min-height: calc_rem(170);
+        }
+        &__all {
+            background: 0 50%/100% auto url('../img/components/index/main_screen/bgr.png') no-repeat;
+        }
+        &__wow {
+            background: 0 20%/100% auto url('../img/components/services/wow.webp') no-repeat;
+        }
+        &__ovw {
+            background: 0 80%/100% auto url('../img/components/services/ovw.jpg') no-repeat;
+        }
+        &__poe {
+            background: 0 50%/100% auto url('../img/components/services/poe.jpg') no-repeat;
+        }
+        &__btn {
+            width: calc_rem(280);
+            height: calc_rem(45);
+        }
+    }
+}
+
+@media (max-width: 25.625em) {
+    .service {
+        padding-top: calc_rem(13);
+        font-size: calc_rem(18);
+    
+        &__item {
+            margin-bottom: calc_rem(13);
+            min-height: calc_rem(170);
+        }
+        &__all {
+            background: 0 50%/100% auto url('../img/components/index/main_screen/bgr.png') no-repeat;
+        }
+        &__wow {
+            background: 0 20%/100% auto url('../img/components/services/wow.webp') no-repeat;
+        }
+        &__ovw {
+            background: 0 80%/100% auto url('../img/components/services/ovw.jpg') no-repeat;
+        }
+        &__poe {
+            background: 0 50%/auto 100% url('../img/components/services/poe.jpg') no-repeat;
+        }
+        &__btn {
+            width: calc_rem(280);
+            height: calc_rem(45);
+        }
+    }
+}
+
+@media (max-width: 21.875em) {
+    .service {
+        padding-top: calc_rem(10);
+        font-size: calc_rem(16);
+    
+        &__item {
+        margin-bottom: calc_rem(10);
+        min-height: calc_rem(150);
+        }
+        &__all {
+            background: 0 50%/100% auto url('../img/components/index/main_screen/bgr.png') no-repeat;
+        }
+        &__wow {
+            background: 0 20%/100% auto url('../img/components/services/wow.webp') no-repeat;
+        }
+        &__ovw {
+            background: 0 100%/100% auto url('../img/components/services/ovw.jpg') no-repeat;
+        }
+        &__poe {
+            background: 0 50%/auto 100% url('../img/components/services/poe.jpg') no-repeat;
+        }
+        &__btn {
+            width: calc_rem(240);
+            height: calc_rem(40);
+        }
+    }
+}
